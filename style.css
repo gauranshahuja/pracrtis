@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0s;
+}
+
+body {
+    background-color: yellow;
+}
+
+#thala_for_reason {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "content";
+    grid-template-rows: 100px 500px;
+    place-items: center;
+}
+
+#thala {
+    grid-area: head;
+    grid-row-start: head;
+    grid-column-start: head;
+    grid-row-end: head;
+    grid-column-end: head;
+}
+
+.reason {
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+}
+
+.Enter {
+    grid-area: content;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: rgb(230, 224, 185);
+
+}
+
+.text {
+    font-size: large;
+    margin: 10px;
+    padding-left: 150px;
+}
+
+#find_reason {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.reason_or_not {
+    background-color: bisque;
+    border: 10px solid bisque;
+    border-radius: 50px;
+    margin: 50 50 20 20px;
+    flex: 1 0 2rem;
+}
+
+.find {
+    background-color: burlywood;
+    height: 40px;
+    flex: .5 0 1rem;
+    margin: 50 50 20 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.find:hover{
+    background-color: burlywood ;
+}
+
+.find:active {
+    transform: scale(.9);
+}
+.output{
+    background-color: aliceblue;
+    position: relative;
+    left: 50px;
+    height: 100px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.out{
+    position: inherit;
+    margin: 0 20 0 20px;
+    top: 10px;
+}
